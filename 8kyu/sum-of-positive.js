@@ -10,3 +10,10 @@ function positiveSum(arr) {
     return sum ;
 }
 
+// Another Solution
+
+function positiveSum(arr) {
+    return arr.filter((index)=> index> 0).reduce((acc,currunt)=>acc+currunt)
+}
+
+
