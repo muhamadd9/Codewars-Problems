@@ -16,4 +16,13 @@ function countBy(x, n) {
       z.push(i*x)
      }
     return z ;
-  }
+}
+
+// Another Solution 
+
+function countBy(x, n) {
+    let z = [];
+    z.length=n+1;
+    return Array.from(z.keys()).slice(1).map((num)=>num*x)
+}
+  
