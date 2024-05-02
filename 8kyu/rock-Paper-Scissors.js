@@ -7,16 +7,15 @@
 // "paper", "paper" --> "Draw!"
 
 const rps = (p1, p2) => {
-    let x ;
+    let z ;
     if(p1 == p2){
-      x = "Draw!"
+      z = "Draw!"
     }
     else if((p1 == 'scissors' && p2=='paper') ||( p1 == 'rock' && p2=='scissors') || (p1 == 'paper' && p2=='rock')){
-      x = "Player 1 won!"
+      z = "Player 1 won!"
     }
     else{
-      x = "Player 2 won!"
+      z = "Player 2 won!"
     }
-    return x
-  
+    return z
   };
