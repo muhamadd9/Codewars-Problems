@@ -8,11 +8,5 @@
 // My Solution 
 
 function removeEveryOther(arr){
-    return arr.filter((index)=>arr.indexOf(index)%2 == 0?index:"")
-}
-
-// Another Solution 
-
-function removeEveryOther(arr){
     return arr.filter((a,i)=>i%2 === 0?a :"" )
 }
