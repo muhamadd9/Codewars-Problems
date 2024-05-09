@@ -15,4 +15,4 @@
 function formatMoney(amount){
     var floatNum = parseFloat(amount)
     return '$' + floatNum.toFixed(2) 
-  }
+}
