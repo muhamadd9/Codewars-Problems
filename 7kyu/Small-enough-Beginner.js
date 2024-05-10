@@ -5,10 +5,12 @@
 // My Solution 
 
 function smallEnough(a, limit){
-    let flag 
-    a.map((item)=>
-    item > limit? flag = false : flag = true 
-    )
+    let flag =true
+    for (let i = 0 ; i< a.length ; i++){
+      if(a[i]>limit){
+        flag = false ;
+        break ;
+      }
+    }
     return flag
-  }
-  
+}
