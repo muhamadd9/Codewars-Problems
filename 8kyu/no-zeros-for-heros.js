@@ -23,4 +23,14 @@ function noBoringZeros(n) {
       
     }
     return Number(newArr.join(""))
-  }
+}
+
+// My Another Solution : 
+
+function noBoringZeros(n) {
+    let numstr =  String(n)
+    while(numstr.endsWith(0)){
+      numstr = numstr.slice(0,numstr.length-1)
+    }
+    return Number(numstr)
+}
