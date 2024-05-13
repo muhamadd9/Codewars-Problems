@@ -7,5 +7,5 @@
 // My Solution 
 
 function getAverage(marks){
-    return Math.round(marks.reduce((acc,next)=>acc+next , 0) / marks.length)
+    return Math.floor(marks.reduce((acc,next)=>acc+next , 0) / marks.length)
 }
