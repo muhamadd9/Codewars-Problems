@@ -23,4 +23,11 @@ function isPangram(string){
     }
     return pangram
    
-  }
+}
+
+// Another SSolution 
+
+function isPangram(string){
+    let alphabets = "abcdefghijklmnopqrstuzwxyz"
+    return alphabets.split("").every((item)=> string.toLowerCase().includes(item)) 
+}
