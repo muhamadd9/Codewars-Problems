@@ -27,3 +27,9 @@ function sortGiftCode(code){
    arr[x]=arr[y];
    arr[y]=temp;
 }
+
+// Another Simple Solution using built in sort function 
+
+function sortGiftCode(code){
+    return code.split('').sort().join('');
+}
