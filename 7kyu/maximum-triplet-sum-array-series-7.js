@@ -25,3 +25,14 @@ function maxTriSum(numbers){
     }
     return sum
 }
+
+// Another Solution using Set 
+
+function maxTriSum(numbers){
+    let sum = 0
+    let sortedNonDuplicatArr= [...new Set(numbers.sort((a,b)=>a-b))]
+    for(let i = 0 ; i<3;i++){
+      sum+= sortedNonDuplicatArr.pop()
+    }
+    return sum
+}
