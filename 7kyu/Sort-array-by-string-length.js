@@ -29,3 +29,9 @@ function swap(arr,a,b){
   arr[a]=arr[b];
   arr[b]=temp
 }
+
+// Another solution using built in sort method 
+
+function sortByLength (array) {
+    return array.sort((a,b) => a.length - b.length)
+}
