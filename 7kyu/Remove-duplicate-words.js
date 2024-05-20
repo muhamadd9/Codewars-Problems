@@ -13,6 +13,6 @@
 // My Solution 
 
 function removeDuplicateWords (s) {
-    return s.split(" ").filter((value,idx,arr)=> idx === arr.lastIndexOf(value)).join(" ")
+    return s.split(" ").filter((value,idx,arr)=> idx === arr.indexOf(value)).join(" ")
   
   }
