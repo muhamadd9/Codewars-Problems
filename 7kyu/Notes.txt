@@ -1,3 +1,5 @@
 The arguments object : arguments is an array-like object accessible inside functions that contains the values of the arguments passed to that function.
 
 The Set object lets you store unique values of any type, whether primitive values or object references.
+
+To Remove a duplicates from array using filter : filter((value,idx,arr)=> idx === arr.lastIndexOf(value))
