@@ -11,6 +11,9 @@
 // My Solution 
 
 function averages(numbers) {
+    if (!numbers || numbers.length < 2) {
+        return [];
+    }
     let averagesArr= []
     for(let i =0 ;i <numbers.length - 1 ;i++){
       averagesArr.push((numbers[i]+numbers[i+1]) / 2)
