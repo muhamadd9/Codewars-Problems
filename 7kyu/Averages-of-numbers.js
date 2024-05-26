@@ -20,3 +20,12 @@ function averages(numbers) {
     }
     return averagesArr
   }
+
+  // Another solution 
+
+  function averages(numbers) {
+    if (!numbers || numbers.length < 2) {
+        return [];
+    }
+    return numbers.slice(0, -1).map((num, index) => (num + numbers[index + 1]) / 2);
+}
