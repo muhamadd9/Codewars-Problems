@@ -30,3 +30,22 @@ function findEvenIndex(arr)
   }
   return n
 }
+
+// Another Solution 
+
+function findEvenIndex(arr) {
+  let leftSum = 0;
+  let rightSum = arr.reduce((acc, next) => acc + next, 0);
+
+  for (let i = 0; i < arr.length; i++) {
+    rightSum -= arr[i];
+
+    if (leftSum === rightSum) {
+      return i;
+    }
+
+    leftSum += arr[i];
+  }
+
+  return -1;
+}
