@@ -17,3 +17,8 @@ function explode(s) {
     return arr.join("")
   }
   
+  // Another Solution 
+
+  function explode(s) {
+    return s.split("").map((e)=>e.repeat(e)).join("")
+  }
