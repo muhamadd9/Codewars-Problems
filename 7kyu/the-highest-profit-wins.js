@@ -15,3 +15,8 @@ function minMax(arr){
     return [sortedArr[0],sortedArr[arr.length-1]]
   }
   
+//   Another Solution 
+
+function minMax(arr){
+    return [Math.min(...arr), Math.max(...arr)];
+  }
