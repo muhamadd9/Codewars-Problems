@@ -14,3 +14,8 @@ function spinWords(string){
     :word
     ).join(" ")
 }
+
+// Another Solution
+function spinWords(string) {
+    return string.replace(/\b\w{5,}\b/g, word => word.split('').reverse().join(''));
+}
