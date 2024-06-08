@@ -16,3 +16,9 @@ function divCon(x){
     }
     return sum 
   }
+
+//   Another Solution 
+
+function divCon(x){
+    return x.reduce((acc, cur) => typeof cur === 'number'? acc + cur : acc - +cur ,0)
+}
