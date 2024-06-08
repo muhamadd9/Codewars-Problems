@@ -28,3 +28,14 @@ function twosDifference(input){
    }
    return newArr
 }
+
+// Another Solution 
+
+function twosDifference(input){
+    return input.sort((a,b)=> a-b).
+    filter((a)=> 
+     input.indexOf(a+2) !== -1
+    ).map((a)=>
+      [a,a+2]
+    )
+}
