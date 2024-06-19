@@ -23,3 +23,9 @@ function getMinMax(arr){
     arr.sort((a,b)=>a-b)
     return [arr[0],arr[arr.length-1]]
   };
+
+//   Solution 
+
+function getMinMax(arr){
+    return [Math.min(...arr),Math.max(...arr)];
+  };
