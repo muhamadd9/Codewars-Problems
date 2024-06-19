@@ -18,3 +18,8 @@ function strCount(str, letter){
     return counter
   }
   
+//   Another Solution 
+
+function strCount(str, letter){  
+    return str.split(letter).length-1
+}
