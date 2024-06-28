@@ -16,4 +16,5 @@ function sumArray(array) {
   .sort((a,b)=>a-b)   // Sort From Low to high
   .slice(1,-1)
   .reduce((acc,current)=>acc+current,0)
+  
 }
