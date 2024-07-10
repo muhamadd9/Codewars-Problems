@@ -5,3 +5,4 @@
 function isItLetter(character) {
     return (character.charCodeAt() >= 97 && character.charCodeAt() < 123) || (character.charCodeAt() >= 65 && character.charCodeAt() < 91) ? true:false
 }
+
