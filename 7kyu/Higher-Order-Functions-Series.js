@@ -33,3 +33,4 @@ function orderFood(people) {
     }
     return mealCounts;
 }
+
