@@ -13,6 +13,7 @@ function getMinMax(arr){
       if(arr[i] > max){
         max = arr[i]
       }
+        
     }
     return [min,max]
   };
