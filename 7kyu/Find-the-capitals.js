@@ -9,3 +9,4 @@ var capitals = function (word) {
 	return word.split("").map((letter,index)=>letter === letter.toUpperCase()?index:null).filter((index)=>index !=null
 };
 
+
